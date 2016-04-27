@@ -4,35 +4,37 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<style>
-	   body{
-   background-color: pink;
-	   }
-	   a{
-	   	font-size: 50px;
-	   	font-family: airal;
-	   }
-	   a:link {
-	   	color :red;
-	   	text-decoration: underline;
-	   }
-	   a:visited{
-	   	color:black;
-	   	text-decoration: none;
-	   }
-	   a:hover{
-	   	color:green;
-	   	text-decoration: none;
-	   }
-	   a:active {
-	   	color:blue;
-	   	text-decoration: underline;
-	   }
+       figure{
+       	width: 500PX;
+       	height: 320PX;
+       	border: 10PX solid #fff;
+       	box-shadow: 0px 0px 40px #000;
+       	overflow: hidden;
+       	position: relative;
+       }
+          figure img {
+       	   transform:scale(1);
+       }
+       figure:hover img{
+       transform:scale(1.2);
+       }
+       figure figcaption{
+       	position: absolute;
+       	z-index: 4;
+       	left: 0;
+       	bottom: 0;
+       	height: 40px;
+       	width: 100%;
+       	color: red;
+       	font-weight: bold;
+       	background-color: rgba (255,255,255,0)
+       }
 	</style>
 </head>
 <body>
-	<a href="www.baidu.com">百度</a>
-	<a href="www.baidu.com">百度</a>
-	<a href="www.baidu.com">百度</a>
-	<a href="www.baidu.com">百度</a>
+	<figure>
+		<figcaption>伍吉康</figcaption>
+		<img src="http://hiphotos.baidu.com/praisejesus/pic/item/e8df7df89fac869eb68f316d.jpg">
+	</figure>
 </body>
 </html>
